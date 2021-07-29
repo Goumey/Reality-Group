@@ -1,0 +1,198 @@
+body {
+    margin:0;
+    
+}
+
+.logo div{
+    display: inline-block;
+}
+.logo .titre{
+    position: relative;
+    top: -50px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.fils ul li a{
+    color: white;
+    font-size: 1.3em;
+    line-height: 2em;
+} 
+nav >ul>li {
+    display: inline-block;
+    margin: 40px 40px;
+   
+    
+}
+nav >ul{
+    text-align: center;
+    
+}
+nav >ul>li>a{
+    
+    color: rgb(44,188,214);
+    
+}
+.parent{
+    position: absolute;
+    background-color: rgb(44,188,214);
+    right: 0;
+    left: 0;
+    display: none;
+    
+
+}
+nav >ul>li>a:hover{
+color: white;
+  background-color: rgb(44,188,214);
+  padding-top:  20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 0;
+  animation : slideDowns 1s;
+ 
+ 
+}
+nav >ul>li:hover .parent{
+    display: block;
+    background-color: rgb(46, 188,214);
+    animation : slideDowns 2s;
+    
+    padding: auto;
+    
+}
+.fils{
+    display: inline-block;
+    width: 40%;
+    
+}
+i{
+    animation: rotation .1s infinite;
+}
+
+@keyframes rotation{
+    from{
+     
+       opacity: 0.5;
+    }
+    
+    to{
+        transform: rotate(-360deg);
+        opacity: 1;
+    }
+
+}
+
+
+
+@keyframes slideDowns{
+    0%{
+      
+        opacity: 0;
+    }
+    
+    
+    100%{
+        transform:translateY(0);
+        opacity: 1;
+    }
+    }
+h1{
+    color: rgb(46, 188,214);
+}
+article{
+    color: rgb(95, 86, 86);
+ 
+}
+hr{
+    color: rgb(46, 188,214);
+
+}
+main{
+   padding:0 5%;
+}
+
+.footer{
+    background-color: rgb(46, 188,214);
+    margin-top:20px ;
+    
+}
+h2{
+    
+    color: rgba(255, 255, 255,0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    padding: 20px 20px;
+    color: rgb(44,188,214);
+}
+
+nav > ul > li > a:hover {
+    color: white;
+    background-color: rgb(44,188,214);
+}
+
+nav > ul  > li:hover  .menu {
+  display: block;
+}
+
+nav .menu  {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgb(44,188,214);
+}
+
+
+.sous-mennu    {
+    display: inline-block;
+    width: 30%;
+}
